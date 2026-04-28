@@ -53,6 +53,8 @@ cirq/                 Cirq state-vector + trajectory implementations
                                        (write/read tesseract memory loop)
   run_p4s_compute_store_cirq.py    [P33] alternate Obs 22 driver
                                        (compute triangle + database store)
+  run_p4s_double_triangle_cirq.py  [P34] 28-qubit double-triangle ternary
+                                       spectrum (Stage A / B / C)
 
 qiskit/               Qiskit Aer + FakeSherbrooke noise stack (P31)
   run_p4s_aer.py, run_p4s_Z3_*_aer.py, run_p4s_tunnel_aer.py,

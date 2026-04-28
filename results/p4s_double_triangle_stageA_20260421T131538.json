@@ -1,0 +1,36 @@
+{
+  "stage": "A",
+  "timestamp": "20260421T131538",
+  "n_qubits": 28,
+  "runtime_s": 9.723562717437744,
+  "build_s": 0.06625533103942871,
+  "simulate_s": 0.07076001167297363,
+  "readout_s": 9.586316347122192,
+  "ops": 740,
+  "depth": 63,
+  "config": {
+    "labels1": [
+      "alpha",
+      "alpha",
+      "alpha"
+    ],
+    "labels2": [
+      "alpha",
+      "alpha",
+      "alpha"
+    ],
+    "n_compute": 1,
+    "J_intra": 0.1,
+    "J_mem1": 0.5,
+    "J_mem2": 0.5,
+    "offset_T2": 0
+  },
+  "overlaps": {
+    "alpha": 0.3775419534755744,
+    "beta": 0.5982232053547105,
+    "gamma": 0.6008100531049656
+  },
+  "dominant": "gamma",
+  "expected": "gamma",
+  "cycle_match": true
+}
