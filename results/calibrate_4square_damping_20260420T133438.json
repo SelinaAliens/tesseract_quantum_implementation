@@ -1,0 +1,180 @@
+{
+  "timestamp": "2026-04-20T13:34:38",
+  "stack": "cirq",
+  "n_periods": 1,
+  "J": 0.1,
+  "shots": 256,
+  "p_depol": 0.005,
+  "rows": [
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_AB",
+      "p_depol": 0.0,
+      "bond_val": 0.5929270612815711,
+      "dt": 0.043433189392089844
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_AB",
+      "p_depol": 0.005,
+      "bond_val": 0.5376453291901642,
+      "dt": 143.94882535934448
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_BC",
+      "p_depol": 0.0,
+      "bond_val": 0.0,
+      "dt": 0.0545811653137207
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_BC",
+      "p_depol": 0.005,
+      "bond_val": 0.42389562394532926,
+      "dt": 86.16808414459229
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_CD",
+      "p_depol": 0.0,
+      "bond_val": 0.385275875185561,
+      "dt": 0.04216122627258301
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_CD",
+      "p_depol": 0.005,
+      "bond_val": 0.39528470752104744,
+      "dt": 157.2173306941986
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_DA",
+      "p_depol": 0.0,
+      "bond_val": 0.7126096406869612,
+      "dt": 0.18061041831970215
+    },
+    {
+      "pattern": "M1_abga",
+      "bond": "bond_DA",
+      "p_depol": 0.005,
+      "bond_val": 0.5153882032022076,
+      "dt": 87.89292931556702
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_AB",
+      "p_depol": 0.0,
+      "bond_val": 0.795495128834866,
+      "dt": 0.04065585136413574
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_AB",
+      "p_depol": 0.005,
+      "bond_val": 0.5863019699779287,
+      "dt": 70.45661067962646
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_BC",
+      "p_depol": 0.0,
+      "bond_val": 0.7126096406869612,
+      "dt": 0.03974175453186035
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_BC",
+      "p_depol": 0.005,
+      "bond_val": 0.6312190586476298,
+      "dt": 86.59316873550415
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_CD",
+      "p_depol": 0.0,
+      "bond_val": 0.701560760020114,
+      "dt": 0.04454660415649414
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_CD",
+      "p_depol": 0.005,
+      "bond_val": 0.6434768838116876,
+      "dt": 84.34939074516296
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_DA",
+      "p_depol": 0.0,
+      "bond_val": 0.667317390751957,
+      "dt": 0.04590320587158203
+    },
+    {
+      "pattern": "M5_aaaa",
+      "bond": "bond_DA",
+      "p_depol": 0.005,
+      "bond_val": 0.5929270612815711,
+      "dt": 68.03388333320618
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_AB",
+      "p_depol": 0.0,
+      "bond_val": 0.1767766952966369,
+      "dt": 0.03889751434326172
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_AB",
+      "p_depol": 0.005,
+      "bond_val": 0.375,
+      "dt": 69.52237010002136
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_BC",
+      "p_depol": 0.0,
+      "bond_val": 0.31868871959954903,
+      "dt": 0.04101681709289551
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_BC",
+      "p_depol": 0.005,
+      "bond_val": 0.42389562394532926,
+      "dt": 70.47094869613647
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_CD",
+      "p_depol": 0.0,
+      "bond_val": 0.08838834764831845,
+      "dt": 0.03995966911315918
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_CD",
+      "p_depol": 0.005,
+      "bond_val": 0.4050462936504913,
+      "dt": 69.5406243801117
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_DA",
+      "p_depol": 0.0,
+      "bond_val": 0.0,
+      "dt": 0.04526472091674805
+    },
+    {
+      "pattern": "M6_bbbb",
+      "bond": "bond_DA",
+      "p_depol": 0.005,
+      "bond_val": 0.57282196186948,
+      "dt": 70.60508584976196
+    }
+  ],
+  "damping_factor_mean": 0.38420273576628666,
+  "damping_factor_std": 0.2792628642266432
+}

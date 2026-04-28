@@ -1,0 +1,7 @@
+cirq>=1.4
+qiskit>=2.3
+qiskit-aer>=0.13
+qiskit-ibm-runtime>=0.20
+numpy>=1.26
+matplotlib>=3.8
+python-docx>=1.1

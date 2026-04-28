@@ -1,0 +1,9 @@
+# Runtime outputs (scripts write here by default; regenerate on demand)
+outputs/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Representative evidence JSONs are explicitly kept under results/ — do not
+# add runtime outputs there without intent.

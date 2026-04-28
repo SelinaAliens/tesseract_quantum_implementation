@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-04-20T00:09:45",
+  "mode": "aer",
+  "parameters": {
+    "n_trials": 20,
+    "shots": 4096,
+    "n_periods": 10,
+    "p_depol": [
+      0.0,
+      0.002,
+      0.005,
+      0.01
+    ],
+    "fake_backend": null
+  },
+  "summaries": {
+    "0.0": {
+      "4spinor": {
+        "n_trials": 20,
+        "across_trial_mean_last5": 0.4225194557570804,
+        "across_trial_std_last5": 0.11632574725039307,
+        "trial_min": 0.212220439198307,
+        "trial_max": 0.6150363214426695
+      },
+      "2spinor": {
+        "n_trials": 20,
+        "drift_mean": 0.00517353786070316,
+        "drift_max": 0.02047403543093726
+      }
+    },
+    "0.002": {
+      "4spinor": {
+        "n_trials": 20,
+        "across_trial_mean_last5": 0.47729663724469146,
+        "across_trial_std_last5": 0.036026611381302864,
+        "trial_min": 0.424147948931031,
+        "trial_max": 0.5669008123035242
+      },
+      "2spinor": {
+        "n_trials": 20,
+        "drift_mean": 0.00697611810210835,
+        "drift_max": 0.022880228235649405
+      }
+    },
+    "0.005": {
+      "4spinor": {
+        "n_trials": 20,
+        "across_trial_mean_last5": 0.48277926699041973,
+        "across_trial_std_last5": 0.00739931711073263,
+        "trial_min": 0.469930288808761,
+        "trial_max": 0.49211237439819033
+      },
+      "2spinor": {
+        "n_trials": 20,
+        "drift_mean": 0.011312229757240968,
+        "drift_max": 0.019264941118973145
+      }
+    },
+    "0.01": {
+      "4spinor": {
+        "n_trials": 20,
+        "across_trial_mean_last5": 0.47050674956281197,
+        "across_trial_std_last5": 0.006896612732143122,
+        "trial_min": 0.4573129406282991,
+        "trial_max": 0.4850290541437062
+      },
+      "2spinor": {
+        "n_trials": 20,
+        "drift_mean": 0.023719560225215645,
+        "drift_max": 0.04799897920567925
+      }
+    }
+  }
+}

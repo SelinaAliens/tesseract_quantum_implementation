@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "Tesseract Quantum Implementation: Cross-Chiral Tunnel and Topology-Independent Z₃ Cellular Automaton"
+message: "If you use this software, please cite both the repository and the associated papers."
+type: software
+authors:
+  - family-names: Stenberg
+    given-names: Selina
+repository-code: "https://github.com/SelinaAliens/tesseract_quantum_implementation"
+license: MIT
+preferred-citation:
+  type: article
+  title: "The Cross-Chiral Tunnel and Its Topology-Independent Z₃ Cellular Automaton: A Pre-Registered Hardware Protocol Stack on Current Superconducting Quantum Processors"
+  authors:
+    - family-names: Stenberg
+      given-names: Selina
+  year: 2026
+  journal: "Merkabit Research Series, Paper 31"
+references:
+  - type: article
+    title: "The Merkabit Tunnel Network as a Z₃ Cellular Automaton: Topology-Independent Bond Locality and the Universal 9-Entry Gate Table"
+    authors:
+      - family-names: Stenberg
+        given-names: Selina
+    year: 2026
+    journal: "Merkabit Research Series, Paper 32"
+  - type: article
+    title: "A Unified Theory from E₆ Coxeter Geometry"
+    authors:
+      - family-names: Stenberg
+        given-names: Selina
+    year: 2026
+    journal: "Merkabit Research Series, Paper 30 (Capstone)"
+    doi: "10.5281/zenodo.19690395"
