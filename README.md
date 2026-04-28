@@ -49,6 +49,10 @@ cirq/                 Cirq state-vector + trajectory implementations
   run_p4s_ngon_cirq.py             [P32] N-gon topology scan (N = 3, 4, 6)
   run_p4s_4square_cirq.py          [P32] 4-square deep-dive
   calibrate_4square_damping.py     [P32] 4-square damping at p_depol = 0.005
+  run_p4s_tesseract_memory_cirq.py [P33] Observable 22 canonical builder
+                                       (write/read tesseract memory loop)
+  run_p4s_compute_store_cirq.py    [P33] alternate Obs 22 driver
+                                       (compute triangle + database store)
 
 qiskit/               Qiskit Aer + FakeSherbrooke noise stack (P31)
   run_p4s_aer.py, run_p4s_Z3_*_aer.py, run_p4s_tunnel_aer.py,
@@ -61,6 +65,8 @@ willow/               Hardware-deployment scripts (Google Quantum Engine)
   obs14_tunnel.py                  [P31] Observable 14, 9 qubits, ≤ 45 QPU-min
   obs16_triangle.py                [P32] Observable 16, 13 qubits, ~25 QPU-min
   obs17_square.py                  [P32] Observable 17, 17 qubits, ~10 QPU-min
+  obs22_pentachoric.py             [P33] Observable 22, 19 qubits, ~140 QPU-min
+                                       (Pentachoric Verification Protocol)
   _engine_wrapper.py               Engine-client adapter (credentials at marked line)
 
 genesis/              Foundational R-locking verification
@@ -96,9 +102,10 @@ paper/                Drafts, masters, figures, figure-generation scripts
 | 14 | **Paper 31** — 2-merkabit tunnel | 9  | ≤ 45  | [`willow/obs14_tunnel.py`](willow/obs14_tunnel.py) |
 | 16 | **Paper 32** — triangle ring | 13 | ~25 | [`willow/obs16_triangle.py`](willow/obs16_triangle.py) |
 | 17 | **Paper 32** — 4-square ring | 17 | ~10 | [`willow/obs17_square.py`](willow/obs17_square.py) |
+| 22 | **Paper 33** — Pentachoric Verification | 19 | ~140 | [`willow/obs22_pentachoric.py`](willow/obs22_pentachoric.py) |
 
 Pre-registration commit SHAs predate any hardware submission.
-Hardware targets: **IBM Eagle r3 / Heron r2** and **Google Willow** in cross-architecture parallel.
+Hardware targets: **Google Willow** (primary; cross-architecture pre-registration includes **IBM Eagle r3 / Heron r2**). Detailed Willow Phase 2 proposal and IBM cross-mirror live in [`SelinaAliens/pentachoric_verification`](https://github.com/SelinaAliens/pentachoric_verification).
 
 ## Reproduction
 
