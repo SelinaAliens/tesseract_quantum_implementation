@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-04-28T23:53:42.874571",
+  "dtype": "complex64",
+  "n_qubits": 28,
+  "T_CYCLE": 12,
+  "label_pair": [
+    "alpha",
+    "alpha"
+  ],
+  "n_compute": 1,
+  "J_intra": 0.1,
+  "J_mem": 0.5,
+  "results": [
+    {
+      "base_offset": 0,
+      "compare_offset": 12,
+      "psi_diff_L2": 8.706357057858017e-08,
+      "psi_diff_max": 5.491299637228053e-10,
+      "norm_base": 1.0,
+      "norm_p12": 1.0,
+      "S_base": 1.0171186923980713,
+      "S_p12": 1.0171186923980713,
+      "S_delta": 0.0,
+      "sim_s_base": 8.964498043060303,
+      "sim_s_p12": 14.942428350448608
+    }
+  ],
+  "total_runtime_s": 31.35510563850403,
+  "summary": {
+    "max_psi_diff_L2": 8.706357057858017e-08,
+    "max_S_delta": 0.0,
+    "machine_eps": 1.19e-07
+  }
+}
