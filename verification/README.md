@@ -1,11 +1,44 @@
 # Period-12 Exactness Verification
 
 Verifies the headline claim of Paper 34 — that the v_D entropy spectrum is
-periodic at the Coxeter number h(E₆) = 12 — to machine precision, by direct
-state-vector comparison at offset_T2 = base vs base + 12 (which reduce to
-identical dynamics modulo T_CYCLE = 12).
+periodic at the Coxeter number h(E₆) = 12 — to machine precision, both by
+direct state-vector comparison (`verify_period_12.py`, three base offsets)
+and by re-running the full Stage C 324-config sweep at `complex128`
+(`run_stage_c_complex128.py`).
 
-## Result summary
+## Headline (Stage C @ complex128, 324 configs)
+
+| Quantity | Value |
+|---|---|
+| Total runtime | 1.8 hours (laptop) |
+| Bit-identical period-12 pairs | **20 / 24** testable b vs b+12 pairs |
+| Max │Δ⟨S⟩│ across the other 4 pairs | **2.22 × 10⁻¹⁶** (one ulp at complex128) |
+| Peak ⟨S⟩ | 1.16692194635649 at offset 4 = T_CYCLE / 3 |
+| Trough ⟨S⟩ | 1.11348374685806 at offset 8 = 2 T_CYCLE / 3 |
+| Peak − trough contrast Δ⟨S⟩ | **0.053438** |
+| FFT dominant period | 12.0000 (k = 3, 58.4 % of non-DC power) |
+| FFT second peak | period 6 (k = 6, 40.6 % of non-DC power) |
+| Harmonic purity in {12, 6} | **98.94 %** (vs Observable 23 threshold ≥ 90 %) |
+| Z₃ triadic split | peak−trough = 4 = T_CYCLE / 3 exactly |
+
+**Observable 23 — all four pre-registered thresholds PASS at complex128:**
+
+| # | Threshold | Measured | Verdict |
+|---|---|---|---|
+| (a) | FFT dominant period = T_CYCLE ± 1 % | 12.0000 | ✅ PASS |
+| (b) | Peak-trough offset separation = T_CYCLE / 3 ± 1 step | 4 (exact) | ✅ PASS |
+| (c) | Peak-trough contrast ≥ 0.02 | 0.053438 | ✅ PASS |
+| (d) | Harmonic purity in {T_CYCLE, T_CYCLE / 2} ≥ 90 % | 98.94 % | ✅ PASS |
+
+The complex128 contrast (0.053438) is ~2.5 % larger than the value reported
+from the original complex64 Stage C deposit (0.0521). Single-precision FP
+rounding was suppressing the cyclotomic Z₃ signal by ~1 part in 40.
+
+## Direct state-vector verification (verify_period_12.py)
+
+A targeted bit-identity check at three Z₃ triadic base offsets {0, 4, 8} vs
+{12, 16, 20}, each comparing the full 28-qubit state vector ψ(b) and ψ(b+12)
+plus the v_D von Neumann entropy:
 
 | Precision | max ‖ψ(b) − ψ(b+12)‖₂ | max │ΔS│ | Machine eps |
 |---|---|---|---|
@@ -28,9 +61,11 @@ single-precision FP rounding.
 ## Files
 
 ```
-verify_period_12.py                                 verification driver
-outputs/verify_period_12_complex64_baseline.json   complex64 reference
-outputs/verify_period_12_complex128_3bases.json    complex128 (the verification)
+verify_period_12.py                                       direct state-vector verification driver
+run_stage_c_complex128.py                                 full 324-config Stage C re-run at complex128
+outputs/verify_period_12_complex64_baseline.json         3-base complex64 reference
+outputs/verify_period_12_complex128_3bases.json          3-base complex128 verification
+outputs/stage_c_complex128_FINAL_20260429T101043.json    full 324-config Stage C @ complex128 (the headline)
 ```
 
 ## Usage
